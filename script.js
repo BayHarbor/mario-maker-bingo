@@ -40,7 +40,8 @@ function setSquare(thisSquare) {
 	}
 	while (usedOptions[newOption]);
 	
-	usedOptions[newOption] = true;
+    usedOptions[newOption] = true;
+    document.getElementById(currSquare).style.backgroundColor = 'rgb(254, 222, 93)';
 	document.getElementById(currSquare).innerHTML = newOption;
 }
 
