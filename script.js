@@ -52,13 +52,3 @@ function anotherCard() {
 	usedOptions = new Array(options.length);
 	newCard();
 }
-
-var table = document.getElementsByTagName('bingotable')[0];
-
-var changeStyle = function(e) {
-    if (e.target.tagName == 'td') {
-        e.target.style.backgroundColor = '#000';
-    }
-};
-
-table.addEventListener('click', changeStyle, false);
