@@ -21,7 +21,8 @@ var options = ["ENEMY SPAM",
               "TITLE LEVEL", 
               "TERRIBLY NAMED LEVEL", 
               "KILLS MARIO AT THE START", 
-              "ON / OFF BLOCKS"];
+              "ON / OFF BLOCKS",
+              "#DGR LEVEL"];
 var usedOptions = new Array(options.length);
 			  
 function newCard() {
