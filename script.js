@@ -21,8 +21,8 @@ var options = ["ENEMY SPAM",
               "TITLE LEVEL", 
               "TERRIBLY NAMED LEVEL", 
               "KILLS MARIO AT THE START", 
-              "ON / OFF BLOCKS",
-              "#DGR LEVEL"];
+			  "ON / OFF BLOCKS",
+			  "#DGR LEVEL"];
 var usedOptions = new Array(options.length);
 			  
 function newCard() {
@@ -52,3 +52,13 @@ function anotherCard() {
 	usedOptions = new Array(options.length);
 	newCard();
 }
+
+var table = document.getElementsByTagName('bingotable')[0];
+
+var changeStyle = function(e) {
+    if (e.target.tagName == 'td') {
+        e.target.style.backgroundColor = '#000';
+    }
+};
+
+table.addEventListener('click', changeStyle, false);

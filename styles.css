@@ -4,7 +4,7 @@ body {
     height: 100vh;
     align-content: center;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
   
   h1, p {
@@ -24,17 +24,19 @@ body {
   #squarefree {
     font-family: Helvetica;
     margin: 0 auto;
-    background: #5dc4de;
+    background: #049CD8;
     text-align: center;
     font-weight: 600;
     font-size: 15pt;
+    width: 100px;
+    height: 100px;
   }
   
   #bingotable {
     margin: 0 auto;
     text-align: center;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     border-collapse: collapse;
     background: #FFDE40;
   }
@@ -43,13 +45,14 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 60%;
   }
   
-  th, td {
+  td {
     font-family: Helvetica;
     margin: 0 auto;
     text-align: center;
     border: 3px solid black;
-    width: 25%;
+    width: 100px;
+    height: 100px;
   }
