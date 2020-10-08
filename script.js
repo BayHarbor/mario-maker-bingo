@@ -1,4 +1,4 @@
-var things = ["ENEMY SPAM", 
+var options = ["ENEMY SPAM", 
               "SOUND EFFECTS EVERYWHERE", 
               "BRING YOSHI TO GOAL", 
               "TECH LEVEL", 
@@ -22,35 +22,32 @@ var things = ["ENEMY SPAM",
               "TERRIBLY NAMED LEVEL", 
               "KILLS MARIO AT THE START", 
               "ON / OFF BLOCKS"];
-var usedNums = new Array(things.length);
+var usedOptions = new Array(options.length);
 			  
 function newCard() {
-	//Starting loop through each square card
-	for(var i=0; i < 24; i++) {  //<--always this code for loops. change in red
+	for(var i=0; i < 24; i++) {
 		setSquare(i);
 	}
 }
 
 function setSquare(thisSquare) {
 	var currSquare = "square"+thisSquare;
-	var newNum;
-	
-	var colPlace =new Array(0,1,2,3,4,0,1,2,3,4,0,1,3,4,0,1,2,3,4,0,1,2,3,4);
-	console.log(usedNums)
+	var newOption;
+
 	do {
-		newNum = getNewNum();
+		newOption = getNewOption();
 	}
-	while (usedNums[newNum]);
+	while (usedOptions[newOption]);
 	
-	usedNums[newNum] = true;
-	document.getElementById(currSquare).innerHTML = newNum;
+	usedOptions[newOption] = true;
+	document.getElementById(currSquare).innerHTML = newOption;
 }
 
-function getNewNum() {
-	return things[Math.floor(Math.random() * things.length)];
+function getNewOption() {
+	return options[Math.floor(Math.random() * options.length)];
 }
 
 function anotherCard() {
-	usedNums = new Array(things.length);
+	usedOptions = new Array(options.length);
 	newCard();
 }
